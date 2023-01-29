@@ -1,15 +1,9 @@
 
+const colors = ['tomato', 'teal', 'orange', 'skyblue'];
+const max = colors.length - 1;
+const min = 0;
+const index = Math.round(Math.random() * (max - min) + min);
+const color = colors [index];
+console.log(color);
+document.body.style.backgroundColor = color;
 
-// let elementWidth = '50px';
-// const result = Number.parseInt(elementWidth);
-// console.log(result);
-
-
-// 
-
-let salary = 1300.16472;
-
-salary = salary.toFixed(2);
-salary = Number(salary);
-
-console.log(salary);
