@@ -6,17 +6,43 @@ let total = 0;
 
 
 
-// 2 Перебрати масив
-for (let i = 0; i < numbers.length; i += 1) {
-console.log(numbers[i]);
-}
-
-// 3 На кожній ітерації перевірити елемент на парність
-if(numbers[i] % 2 === 0) {
-    console.log('Парні!!!');
+// // 2 Перебрати масив
+// for (let i = 0; i < numbers.length; i += 1) {
+// const number = numbers[i];
+// console.log(number);
 
 
-// 4 Якщо парне, плюсуємо до total
-    total += numbers[i];
-}
-console.log('Total:', total);
+// // 3 На кожній ітерації перевірити елемент на парність
+// if (number % 2 === 0) {
+//     console.log('Парні!!!');
+
+
+// // 4 Якщо парне, плюсуємо до total
+//     total += number;
+// }
+// for (const number of numbers){
+//     console.log(number);
+//     if (number % 2 === 0) {
+//         console.log('Парні!!!');
+    
+    
+//     // 4 Якщо парне, плюсуємо до total
+//         total += number;
+//     }
+// }
+
+// console.log('Total:', total);
+
+function getExtremeElements(array) {
+    // Change code below this line
+  const ar = [];
+  ar.push(array[0]);
+  ar.push(array[array.length -1]);
+  
+  
+    // Change code above this line
+    return ar;
+    console.log(getExtremeElements);
+  }
+  
+  
