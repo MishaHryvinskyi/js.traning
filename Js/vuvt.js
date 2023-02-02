@@ -46,6 +46,87 @@
 //   }
   
 
-const logins = ['m4ngoDone' ,'k1widab3st' ,'poly1scute' ,'aj4xth3m4n'];
-const loginToFind = 'poly1scute';
-  
+// const logins = ['m4ngoDone' ,'k1widab3st' ,'poly1scute' ,'aj4xth3m4n'];
+// const loginToFind = 'poly1scute';
+// let message = `Користувач ${loginToFind} знайдений.`;
+
+// for(let i = 0; i < logins.length; i += 1) {
+//     const login = logins[i];
+    
+//     console.log('login:', login);
+//     console.log(`${login} === ${loginToFind}:`,login === loginToFind);
+
+// if (login === loginToFind){
+//     console.log('Ура співпало!');
+//     message = `Користувач ${loginToFind} знайдений.`;
+//     break;
+   
+// }    
+// }               // FOR OF
+
+
+
+// for(const login of logins) {
+//     console.log('login:', login);
+//     console.log(`${login} === ${loginToFind}:`,login === loginToFind);
+
+
+//     if (login === loginToFind){
+//              console.log('Ура співпало!');
+//              message = `Користувач ${loginToFind} знайдений.`;
+//              break;
+// }
+// }
+//   console.log(message);  // FOR OF
+
+
+// console.log(logins.includes('poly1scute')); // абстракція
+
+
+// const message = logins.includes(loginToFind)           // абстракція
+// ? `Йо користувач ${loginToFind} знайдений` 
+// : `Ніт користувач ${loginToFind} не знайдений`;
+// console.log(message); // декларативний код
+
+
+
+
+
+// ЗАДаЧА напиши скрипт самого маленького числа в масиві,
+// при умові, що числа унікальні не повторюються
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+// let smallestNumber = numbers[0];  // поклали перед собою саму маленьку монетку
+// let largestNumber = numbers[0];
+
+// for (const number of numbers) { //  перебрали мішочок
+//     if(number < smallestNumber){ //  порівняли чи поточна монетка менша за ту яку витягнули?
+//         smallestNumber = number; //  якщо менша? замінили
+//     }
+// }
+
+// console.log('smallestNumber:',  smallestNumber);
+
+
+// for (const number of numbers){
+//     if(number > largestNumber){
+//         largestNumber = number;
+//     }
+// }
+// console.log('largestNumber:', largestNumber);
+
+
+
+
+
+// Задача. Напиши скрипт , який обєднує всі елементи масива в одному рядку
+
+// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+// let string = ' ';
+
+// for (const friend of friends){
+//     string += friend + ', ';
+// }
+// console.log(string.slice(0, string.length - 1));
+// const string = friends.join(', ');
+
+// console.log(string);
