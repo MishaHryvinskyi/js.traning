@@ -68,14 +68,14 @@
 // видалити
 // добавити
 // обновити
-const cards = [
-    'Карточка-1',
-    'Карточка-2',
-    'Карточка-3',
-    'Карточка-4',
-    'Карточка-5'
-];
-console.table(cards);
+// const cards = [
+//     'Карточка-1',
+//     'Карточка-2',
+//     'Карточка-3',
+//     'Карточка-4',
+//     'Карточка-5'
+// ];
+// console.table(cards);
 
 // видалення елемента по індексу
 // const cardToRemove = 'Карточка-3';
@@ -92,9 +92,12 @@ console.table(cards);
 // console.table(cards);
 
 // оновлення по індексу
-const cardToUpDate = 'Карточка-4';
+// const cardToUpDate = 'Карточка-4';
 
-const index = cards.indexOf(cardToUpDate);
-console.table(index);
-cards.splice(index, 1, 'Оновлена карточка-4');
-console.table(cards);
+// const index = cards.indexOf(cardToUpDate);
+// console.table(index);
+// cards.splice(index, 1, 'Оновлена карточка-4');
+// console.table(cards);
+
+
+ 12 % 2.4 =;
