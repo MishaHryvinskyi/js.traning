@@ -100,4 +100,15 @@
 // console.table(cards);
 
 
- 12 % 2.4 =;
+ const add = function (x, y) {
+console.log(x);
+console.log(y);
+
+console.log('meee')
+return x + y;
+ }
+const r1 = add(6, 3);
+console.log('r1:', r1);
+
+add(5, 3);
+add(10, 30);
