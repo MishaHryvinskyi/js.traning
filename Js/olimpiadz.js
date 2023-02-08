@@ -100,15 +100,24 @@
 // console.table(cards);
 
 
- const add = function (x, y) {
-console.log(x);
-console.log(y);
+//  const add = function (x, y) {
+// console.log(x);
+// console.log(y);
 
-console.log('meee')
-return x + y;
- }
-const r1 = add(6, 3);
-console.log('r1:', r1);
+// console.log('meee')
+// return x + y;
+//  }
+// const r1 = add(6, 3);
+// console.log('r1:', r1);
 
-add(5, 3);
-add(10, 30);
+// add(5, 3);
+// add(10, 30);
+
+const artOfKayia ={
+    gobelen: 'fire autem',
+    kulum: 'gucyl',
+    art: 'watercolor',
+};
+
+console.log(artOfKayia);
+
