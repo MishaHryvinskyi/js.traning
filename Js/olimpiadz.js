@@ -113,11 +113,25 @@
 // add(5, 3);
 // add(10, 30);
 
-const artOfKayia ={
-    gobelen: 'fire autem',
-    kulum: 'gucyl',
-    art: 'watercolor',
-};
+// const artOfKayia ={
+//     gobelen: 'fire autem',
+//     kulum: 'gucyl',
+//     art: 'watercolor',
+// };
 
-console.log(artOfKayia);
+// console.log(artOfKayia);
 
+const a = {x:5, y:243};
+const b = {x:65, z:457};
+const c = {z:34, y:45};
+
+const d = {
+    ...a,//x:5,x:54,   x:65
+    x:54,
+    ...b,// y:243,y:43,  y:45
+    y:43,
+    ...c,// z:457,z:34   z:77
+    z:77
+//    
+    };
+console.log(d);
