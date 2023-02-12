@@ -121,17 +121,15 @@
 
 // console.log(artOfKayia);
 
-const a = {x:5, y:243};
-const b = {x:65, z:457};
-const c = {z:34, y:45};
-
-const d = {
-    ...a,//x:5,x:54,   x:65
-    x:54,
-    ...b,// y:243,y:43,  y:45
-    y:43,
-    ...c,// z:457,z:34   z:77
-    z:77
-//    
-    };
-console.log(d);
+const atTheOldToad = {
+    potions: ["Speed potion", "Dragon breath", "Stone skin"],
+    addPotion(potionName) {
+      // Change code below this line
+  this.potions.push(Invisibility);
+  
+  
+      // Change code above this line
+    },
+    console.log(atTheOldToad.potions);
+  };
+  
