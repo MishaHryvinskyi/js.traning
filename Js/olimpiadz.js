@@ -121,15 +121,41 @@
 
 // console.log(artOfKayia);
 
-const atTheOldToad = {
-    potions: ["Speed potion", "Dragon breath", "Stone skin"],
-    addPotion(potionName) {
-      // Change code below this line
-  this.potions.push(Invisibility);
-  
-  
-      // Change code above this line
-    },
-    console.log(atTheOldToad.potions);
-  };
-  
+// const add = function(x, y) {
+//   console.log(x);
+//   console.log(y);
+//   console.log('Виконує функцію add');
+
+// return (x + y) * y;
+// };
+// const r1 = add(5, 4);
+// console.log('r1 =', r1);
+// const r2 = add(52, 41)
+// console.log('r2 =', r2);
+// const r3 = add(54, 23)
+// console.log('r3 =', r3);
+
+
+// 
+// const cart = [58, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// let total = 0;
+
+// for (const value of cart){
+//   total += value;
+// }
+
+// console.log('total:', total);
+
+const calculateTotalPrice = function(items) {
+  console.log(items);
+
+  let total = 0;
+  for (const item of items) {
+    total += item;
+  }
+  return total;
+};
+
+console.log(calculateTotalPrice([1, 2, 3]));
+console.log(calculateTotalPrice([5, 10, 15, 20]));
+console.log(calculateTotalPrice([100, 200, 300]));
