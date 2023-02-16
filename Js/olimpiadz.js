@@ -146,16 +146,32 @@
 
 // console.log('total:', total);
 
-const calculateTotalPrice = function(items) {
-  console.log(items);
+// const calculateTotalPrice = function(items) {
+//   console.log(items);
 
-  let total = 0;
-  for (const item of items) {
-    total += item;
-  }
-  return total;
-};
+//   let total = 0;
+//   for (const item of items) {
+//     total += item;
+//   }
+//   return total;
+// };
 
-console.log(calculateTotalPrice([1, 2, 3]));
-console.log(calculateTotalPrice([5, 10, 15, 20]));
-console.log(calculateTotalPrice([100, 200, 300]));
+// console.log(calculateTotalPrice([1, 2, 3]));
+// console.log(calculateTotalPrice([5, 10, 15, 20]));
+// console.log(calculateTotalPrice([100, 200, 300]));
+
+
+function add(a, b, c) {
+  console.log('цифри :', a, b, c);
+  console.log('віднімання :', a - b);
+  console.log('додавання :', c + b);
+  console.log('ділення :', c / b);
+}
+
+add(2, 4, 5);
+add(1, 5, 23);
+
+const adds = (r, v, d) => r + v + d;
+console.log(r + v + d);
+
+adds(9, 2, 3);
