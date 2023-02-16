@@ -161,17 +161,21 @@
 // console.log(calculateTotalPrice([100, 200, 300]));
 
 
-function add(a, b, c) {
-  console.log('цифри :', a, b, c);
-  console.log('віднімання :', a - b);
-  console.log('додавання :', c + b);
-  console.log('ділення :', c / b);
-}
+// function add(a, b, c) {
+//   console.log('цифри :', a, b, c);
+//   console.log('віднімання :', a - b);
+//   console.log('додавання :', c + b);
+//   console.log('ділення :', c / b);
+// }
 
-add(2, 4, 5);
-add(1, 5, 23);
+// add(2, 4, 5);
+// add(1, 5, 23);
 
-const adds = (r, v, d) => r + v + d;
-console.log(r + v + d);
+// const adds = (r, v, d) => r + v + d;
+// console.log(r + v + d);
 
-adds(9, 2, 3);
+// adds(9, 2, 3);
+
+const validNumber = ('51');
+console.log(validNumber);
+
