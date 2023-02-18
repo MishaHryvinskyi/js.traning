@@ -178,8 +178,65 @@
 // let salary = 10232.2342;
 // console.log(Number(salary.toFixed(2)));
 
-function multiply(a, b) {
-  console.log(a * b);
-}
-multiply();
-console.log
+// const doMath = function (a, b, callback) {
+// const result = callback(a, b);
+
+// console.log(result);
+// };
+
+// const add = function (x, y) {
+// return x + y;
+
+// };
+
+// doMath(2, 3, add)
+
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+// makePizza("Ultracheese", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+
+
+// const fnA = function (message, callback) {
+// console.log(message);
+
+// console.log(callback);
+// callback(2);
+// };
+
+// const fnB = function (number) {
+//   console.log('Це лог при виклиці fnB', number);
+// }
+
+// fnA('Вуууувтень', fnB);
+
+const doMath = function (a, b, callback) {
+const result = callback(a, b);
+
+console.log(result);
+};
+
+doMath(10, 2, function(x, y) {
+  return x / y;
+});
+doMath(2, 4, function(x, y) {
+  return x * y;
+});
+doMath(9, 4, function(x, y) {
+  return x - y;
+});
+doMath(3, 4, function(x, y) {
+  return x + y;
+});
+
+doMath(16, 3, function(x, y) {
+  return x % y;
+});
