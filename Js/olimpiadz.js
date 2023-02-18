@@ -175,7 +175,11 @@
 // console.log(r + v + d);
 
 // adds(9, 2, 3);
+// let salary = 10232.2342;
+// console.log(Number(salary.toFixed(2)));
 
-const age = 50;
-console.log(!true);
-console.log(!false);
+function multiply(a, b) {
+  console.log(a * b);
+}
+multiply();
+console.log
