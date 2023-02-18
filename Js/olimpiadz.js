@@ -176,6 +176,6 @@
 
 // adds(9, 2, 3);
 
-const validNumber = ('51');
-console.log(validNumber);
-
+const age = 50;
+console.log(!true);
+console.log(!false);
