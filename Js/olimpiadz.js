@@ -277,4 +277,5 @@ const handleButtonClick = function (){
 
 buttonRef.addEventListener('click', handleButtonClick);
 
-window.navigator.geolocation.getCurrentPosition();
+
+
