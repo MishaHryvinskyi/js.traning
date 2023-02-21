@@ -269,13 +269,101 @@
 // pizzaPalace.order("Vienna", makePizza, onOrderError);
 
 
-const buttonRef = document.querySelector('.js-button');
+// const buttonRef = document.querySelector('.js-button');
 
-const handleButtonClick = function (){
-  console.log('Клік по кнопці' + Date.now());
+// const handleButtonClick = function (){
+//   console.log('Клік по кнопці' + Date.now());
+// }
+
+// buttonRef.addEventListener('click', handleButtonClick);
+
+
+
+// const onGetPositionSuccess = function (position) {
+//   console.log('Це виклик підтвердження надання доступу до геолокації:');
+//   console.log(position);
+// };
+
+// const onGetPositionError = function (error) {
+//   console.log('У доступі до геолокації відмовлено:');
+//   console.log(error);
+// }
+
+// window.navigator.geolocation.getCurrentPosition(
+//   onGetPositionSuccess, 
+//   onGetPositionError
+//   );
+
+// const callbak = function() {
+
+//   console.log('через дві секунди після виклику функції');
+
+// };
+
+// console.log('В коді перед тайм аутом');
+
+// setTimeout (callbak, 5000);
+
+// console.log('В коді після тайм ауту');
+
+
+// const onRequestSuccess = function (response) {
+//   console.log('Виклик функції onRequestSuccess після успішної відповіді з бекенду');
+
+
+//   console.log(response);
+// };
+
+// fetch('https://pokeapi.co/api/v2/pokemon')
+//       .then(res => res.json())
+//       .then(onRequestSuccess);  // pokemon
+
+
+
+const filter = function (arrey, test) {
+  const filtredArrey = [];
+
+      for (const el of arrey){
+        console.log(el);
+        const passed = test(el);
+
+        if (passed) {
+          filtredArrey.push(el);
+        }
+      }
+      return filtredArrey;
+};
+
+// 1 треба передати функцію
+// 2 функція отримує елемент масиву, 
+// 3 ящо елемент масиву задовільняє умову функція верне true 
+// 4 якщоні то falce
+
+const callbakc1 = function (value) {
+  return value >= 3;
 }
 
-buttonRef.addEventListener('click', handleButtonClick);
+const r1 = filter([1, 2, 3, 4, 5], callbakc1);
+
+console.log(r1);
 
 
+const callvack2 = function (value){
+  return value <= 4;
+};
 
+const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], callvack2);
+console.log(r2);
+
+const fruit = [
+  { name: 'apple', quantity: 200, isFresh: true },
+  { name: 'grapes', quantity: 150, isFresh: false },
+  { name: 'bananas', quantity: 100, isFresh: true },
+];
+
+const getFruits = function (fruit) {
+  return fruit.quantity >= 120;
+}
+
+const r3 = filter(fruit, getFruits);
+console.log(r3);
