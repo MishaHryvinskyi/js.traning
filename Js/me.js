@@ -170,20 +170,73 @@
 //     // Change code above this line
 //     return totalPrice;
 //   }
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// console.log(filterArray(2, 3));
 
 
+// const add = (a, b, c) => {
+// return a + b + c;
+// };
+
+// console.log(add(2, 4, 3));
+
+// const addMassege = message => {
+//   return message;
+// };
+// console.log(addMassege('Привіт'));
+
+// const adds = () => {
+// console.log('Шо це є?');
+// };
+// adds();
 
 
-function filterArray(numbers, value) {
-  const filteredNumbers = [];
+// const add = (...args) => a + b;
+// console.log(add(4, 5));
 
-  numbers.forEach(function (number) {
-    if (number > value) {
-      filteredNumbers.push(number);
-    }
-  });
+// function adds () {
+// console.log(arguments);
+// };
+// adds(2, 4, 5, 6, 7);
+// // 
+// 
+// const showThis = () => {
+//   console.log('THis:', this);
+// };
 
-  // Change code above this line
-  return filteredNumbers;
-}
-console.log(filterArray(2, 3));
+// showThis();
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+// const greaterThenTwo = numbers.filter(num => num > 4);
+// console.log(greaterThenTwo);
+
+// const myltByTwo = greaterThenTwo.map(num => num * 3);
+// console.log(myltByTwo);
+
+// const sorted = myltByTwo.sort((a, b) => a - b);
+
+// console.log(sorted);
+
+const players = [
+  { id: 'id - 1', tag: 'Mango', isOnline: true, rank: 800 },
+  { id: 'id - 2', tag: 'Ajax', isOnline: false, rank: 600 },
+  { id: 'id - 3', tag: 'Poly', isOnline: true, rank: 100 },
+  { id: 'id - 4', tag: 'Kiwi', isOnline: true, rank: 400 },
+];
+
+const onlineAndSorted = players
+.filter(player => player.isOnline)
+.sort((prevPlayer, nextPlayer) => prevPlayer.rank - nextPlayer.rank);
+console.log(onlineAndSorted);
