@@ -217,7 +217,7 @@
 
 // showThis();
 
-const numbers = [1, 2, 3, 4, 5, 6];
+// const numbers = [1, 2, 3, 4, 5, 6];
 
 // const greaterThenTwo = numbers.filter(num => num > 4);
 // console.log(greaterThenTwo);
@@ -229,14 +229,123 @@ const numbers = [1, 2, 3, 4, 5, 6];
 
 // console.log(sorted);
 
-const players = [
-  { id: 'id - 1', tag: 'Mango', isOnline: true, rank: 800 },
-  { id: 'id - 2', tag: 'Ajax', isOnline: false, rank: 600 },
-  { id: 'id - 3', tag: 'Poly', isOnline: true, rank: 100 },
-  { id: 'id - 4', tag: 'Kiwi', isOnline: true, rank: 400 },
-];
+// const players = [
+//   { id: 'id - 1', tag: 'Mango', isOnline: true, rank: 800 },
+//   { id: 'id - 2', tag: 'Ajax', isOnline: false, rank: 600 },
+//   { id: 'id - 3', tag: 'Poly', isOnline: true, rank: 100 },
+//   { id: 'id - 4', tag: 'Kiwi', isOnline: true, rank: 400 },
+// ];
 
-const onlineAndSorted = players
-.filter(player => player.isOnline)
-.sort((prevPlayer, nextPlayer) => prevPlayer.rank - nextPlayer.rank);
-console.log(onlineAndSorted);
+// const onlineAndSorted = players
+// .filter(player => player.isOnline)
+// .sort((prevPlayer, nextPlayer) => prevPlayer.rank - nextPlayer.rank);
+// console.log(onlineAndSorted);
+// const numbers = [1, 2, 3, 4, 5];
+
+// const dirtyMultiply = (array, value) => {
+//   for (let i = 0; i < array.length; i += 1) {
+//     array[i] = array[i] * value;
+//   }
+// };
+
+
+
+// dirtyMultiply(numbers, 2);
+
+// console.log(numbers); 
+
+
+// const pureMultiply = (array, value) => {
+//   const newArrey = [];
+//   array.forEach(element => {
+//     newArrey.push(element * value);
+//   });
+//   return newArrey;
+// };
+
+// const numbers = [1, 2, 3, 4, 5];
+// const doubletNumbers =pureMultiply(numbers, 2);
+
+// console.log('Поточний масив:', numbers);
+// console.log('Новий масив:', doubletNumbers)
+
+
+// const planets = ["Земля", "Марс", "Венера", "Юпітер"];
+
+// const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
+// console.log(planetsInUpperCase);
+
+// const planetsInLoverCase = planets.map(planet => planet.toLowerCase());
+// console.log(planetsInLoverCase);
+// console.log(planets);
+
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Полі", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+//   { name: "Х'юстон", score: 64 },
+// ];
+
+// const names = students.map(student => student.score);
+// console.log(names);
+// const students = [
+//   { name: 'Mango', course:["математика", "фізика"] },
+//   { name: 'Poly', courses: ["інформатика", "математика"] },
+//   { name: 'Ajax', course: ["фізика", "біологія"]  },
+// ];
+
+// console.log(students.map(student => student.courses));
+
+// console.log(students.flatMap(student => student.courses));
+
+// const values = [51, -3, 27, 21, -68, 42, -37];
+// console.log(values);
+
+// const positionValues = values.filter(value => value >= 0) ;
+// console.log(positionValues);
+
+// const negativeValues = values.filter(value => value < 0) ;
+// console.log(negativeValues);
+
+// const bigValues = values.filter(value => value > 1000) ;
+// console.log(bigValues);
+
+// const LOW_SCORE = 50;
+// const HIGH_SCORE = 80;
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Полі", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+//   { name: "Х'юстон", score: 64 },
+// ];
+
+// const best = students.filter(student => student.score > HIGH_SCORE);
+// console.log(best);
+// const worst = students.filter(student => student.score < LOW_SCORE);
+// console.log(worst);
+// const avarege = students.filter(
+//   ({ score }) => score >= LOW_SCORE && score < HIGH_SCORE
+// );
+// console.log(avarege); 
+
+// const colorPickerOptions = [
+//   { label: "red", color: "#F44336" },
+//   { label: "green", color: "#4CAF50" },
+//   { label: "blue", color: "#2196F3" },
+//   { label: "pink", color: "#E91E63" },
+//   { label: "indigo", color: "#3F51B5" },
+// ];
+
+// console.log(colorPickerOptions.find(option => option.label === "blue")); 
+// console.log(colorPickerOptions.find(option => option.label === "pink")); 
+// console.log(colorPickerOptions.find(option => option.label === "white"));
+
+const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+console.log(numbers);
+
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+console.log(evenNumbers);
+const oddNumbers = numbers.filter(number => number % 2 !== 0);
+console.log(oddNumbers);
