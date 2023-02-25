@@ -342,10 +342,45 @@
 // console.log(colorPickerOptions.find(option => option.label === "pink")); 
 // console.log(colorPickerOptions.find(option => option.label === "white"));
 
-const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
-console.log(numbers);
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// console.log(numbers);
 
-const evenNumbers = numbers.filter(number => number % 2 === 0);
-console.log(evenNumbers);
-const oddNumbers = numbers.filter(number => number % 2 !== 0);
-console.log(oddNumbers);
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+// console.log(evenNumbers);
+// const oddNumbers = numbers.filter(number => number % 2 !== 0);
+// console.log(oddNumbers);
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// const doubledNums = numbers.map(function(number){
+// console.log(number);
+// return number * 2;
+// });
+// const delTwoNumbers = numbers.map(function(number){
+//     return number - 2;
+// });
+// console.log("doubledNums:", doubledNums);
+// console.log("numbers:", numbers);
+// console.log("delTwoNumbers:", delTwoNumbers);
+
+
+const players = [
+    { id: 'player-1', name: 'Mango', timePlayd: 310, points: 54, online: false },
+    { id: 'player-2', name: 'Poly', timePlayd: 470, points: 92, online: true },
+    { id: 'player-3', name: 'Katia', timePlayd: 230, points: 89, online: true },
+    { id: 'player-4', name: 'Misha', timePlayd: 150, points: 71, online: false },
+    { id: 'player-5', name: 'Zcaba', timePlayd: 80, points: 46, online: true },
+];
+
+const updatePlayers = players.map(player => {
+console.log(player);
+
+return {
+    ...player,
+    points: player.points * 1.1,
+}
+});
+console.log(updatePlayers);
+console.table(updatePlayers)
+
+
