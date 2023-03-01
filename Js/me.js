@@ -372,15 +372,24 @@ const players = [
     { id: 'player-5', name: 'Zcaba', timePlayd: 80, points: 46, online: true },
 ];
 
-const updatePlayers = players.map(player => {
-console.log(player);
+console.log(players);
+console.table(players);
 
-return {
-    ...player,
-    points: player.points * 1.1,
-}
-});
-console.log(updatePlayers);
-console.table(updatePlayers)
+const playerToUpdate =  'player-4';
+
+const updatePlayers = players.map(player => {
+    console.log(player.id);
+    if (playerToUpdate === player.id) {
+
+        return {
+            ...player,
+            timePlayd: player.timePlayd + 300,
+        }
+    }
+    return player;
+    
+    });
+console.table(updatePlayers);
+
 
 
