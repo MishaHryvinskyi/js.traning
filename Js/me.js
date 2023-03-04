@@ -364,32 +364,57 @@
 // console.log("delTwoNumbers:", delTwoNumbers);
 
 
-const players = [
-    { id: 'player-1', name: 'Mango', timePlayd: 310, points: 54, online: false },
-    { id: 'player-2', name: 'Poly', timePlayd: 470, points: 92, online: true },
-    { id: 'player-3', name: 'Katia', timePlayd: 230, points: 89, online: true },
-    { id: 'player-4', name: 'Misha', timePlayd: 150, points: 71, online: false },
-    { id: 'player-5', name: 'Zcaba', timePlayd: 80, points: 46, online: true },
-];
+// const players = [
+//     { id: 'player-1', name: 'Mango', timePlayd: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Poly', timePlayd: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Katia', timePlayd: 230, points: 89, online: true },
+//     { id: 'player-4', name: 'Misha', timePlayd: 150, points: 71, online: false },
+//     { id: 'player-5', name: 'Zcaba', timePlayd: 80, points: 46, online: true },
+// ];
 
-console.log(players);
-console.table(players);
+// console.log(players);
+// console.table(players);
 
-const playerToUpdate =  'player-4';
+// const playerToUpdate =  'player-4';
 
-const updatePlayers = players.map(player => {
-    console.log(player.id);
-    if (playerToUpdate === player.id) {
+// const updatePlayers = players.map(player => {
+//     console.log(player.id);
+//     if (playerToUpdate === player.id) {
 
-        return {
-            ...player,
-            timePlayd: player.timePlayd + 300,
-        }
-    }
-    return player;
+//         return {
+//             ...player,
+//             timePlayd: player.timePlayd + 300,
+//         }
+//     }
+//     return player;
     
-    });
-console.table(updatePlayers);
+//     });
+// console.table(updatePlayers);
 
+// const pizzaPalace = {
+//     pizzas: ["Supercheese", "Smoked", "Four meats"],
+//     // Change code below this line
+//     checkPizza(pizzaName) {
+//       return pizzas.includes(pizzaName);
+//     },
+//     order(pizzaName) {
+//       const isPizzaAvailable = checkPizza(pizzaName);
+  
+//       if (!isPizzaAvailable) {
+//         return `Sorry, there is no pizza named «${pizzaName}»`;
+//       }
+  
+//       return `Order accepted, preparing «${pizzaName}» pizza`;
+//     },
+//     // Change code above this line
+//   };
+const heading = document.createElement("h1");
+console.log(heading); // <h1></h1>
 
+heading.textContent = "This is a heading";
+console.log(heading); // <h1>This is a heading</h1>
 
+const image = document.createElement("img");
+image.src = "https://placeimg.com/640/480/nature";
+image.alt = "Nature";
+console.log(image);
