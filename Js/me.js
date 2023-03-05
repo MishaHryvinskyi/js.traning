@@ -408,13 +408,44 @@
 //     },
 //     // Change code above this line
 //   };
-const heading = document.createElement("h1");
-console.log(heading); // <h1></h1>
+// const heading = document.createElement("h1");
+// console.log(heading); // <h1></h1>
 
-heading.textContent = "This is a heading";
-console.log(heading); // <h1>This is a heading</h1>
+// heading.textContent = "This is a heading";
+// console.log(heading); // <h1>This is a heading</h1>
 
-const image = document.createElement("img");
-image.src = "https://placeimg.com/640/480/nature";
-image.alt = "Nature";
-console.log(image);
+// const image = document.createElement("img");
+// image.src = "https://placeimg.com/640/480/nature";
+// image.alt = "Nature";
+// console.log(image);
+
+// const bookShelf ={
+//     authors: ["Бернард Корнуелл", "Роберт Шеклі"],
+//     getAuthors() {
+//         return this.authors;
+//     },
+//     addAuthors(authorsName) {
+//         this.authors.push(authorsName);
+//     },
+// };
+
+// console.log(bookShelf.getAuthors());
+// bookShelf.addAuthors("Лі Таніт");
+// console.log(bookShelf.getAuthors());
+// bookShelf.addAuthors("Катерина Зорро Автрійська");
+// console.log(bookShelf.getAuthors());
+// "use strict";
+const customer = {
+    firstName: "Jacob",
+    lastName: "Mercer",
+    getFullName() {
+      return `${this.firstName} ${this.lastName}`;
+    },
+  };
+  
+  function makeMessage(callback) {
+ 
+    console.log(`Обробляємо заявку від ${callback()}.`);
+  }
+  
+  makeMessage(customer.getFullName.bind(customer));

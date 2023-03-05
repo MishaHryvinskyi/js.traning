@@ -130,3 +130,12 @@
 // const string = friends.join(', ');
 
 // console.log(string);
+
+const katya = {
+    name: "Katya",
+    showName() {
+    console.log(katya.name);
+    },
+};
+
+katya.showName();
