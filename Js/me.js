@@ -435,17 +435,25 @@
 // bookShelf.addAuthors("Катерина Зорро Автрійська");
 // console.log(bookShelf.getAuthors());
 // "use strict";
-const customer = {
-    firstName: "Jacob",
-    lastName: "Mercer",
-    getFullName() {
-      return `${this.firstName} ${this.lastName}`;
-    },
-  };
+// const customer = {
+//     firstName: "Jacob",
+//     lastName: "Mercer",
+//     getFullName() {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//   };
   
-  function makeMessage(callback) {
+//   function makeMessage(callback) {
  
-    console.log(`Обробляємо заявку від ${callback()}.`);
-  }
+//     console.log(`Обробляємо заявку від ${callback()}.`);
+//   }
   
-  makeMessage(customer.getFullName.bind(customer));
+//   makeMessage(customer.getFullName.bind(customer));
+
+const animal = { eats: true };
+const dog = Object.create(animal);
+dog.barks = true;
+
+for (const key in dog) {
+  console.log(key); 
+}
