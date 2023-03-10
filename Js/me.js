@@ -78,3 +78,70 @@
 // console.log(calculator.read(40, 5).add());
 // console.log(calculator.read(40, 5).mult());
 // console.log(calculator.read(40, 5).del());
+// "use strict";
+// const hotel = {
+//     username: "Resort Hotel",
+//     showThis() {
+//         const foo = function() {
+//             console.log('This is foo: ', this);
+//         };
+//         foo();
+//         console.log('This is showThis: ', this);
+//     },
+// };
+
+// hotel.showThis();
+
+// "use strict";
+// const add = function () {
+//     console.log("add", this);
+// };
+
+// add();
+
+// const obj = {
+//     a: 5,
+//     showA() {
+//         console.log(this.a);
+//     }
+// };
+// const { a } = obj;
+// console.log(a);
+
+// const customer = {
+//     firstName: 'Катерини',
+//     lastName: 'Тарасевич-Гривінської',
+//     getFullName() {
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+// };
+
+// function makeMessage(callback) {
+//     console.log(`Обробляємо заявку від ${callback.call(customer)}.`);
+// };
+// makeMessage(customer.getFullName);
+
+
+// const objC = {
+//     z:5,
+// };
+// console.log(objC);
+
+// console.log(objC.hasOwnProperty("z"));
+
+// const objB = Object.create(objC);
+// objB.y = 2;
+
+// const objA = Object.create(objB);
+// objA.x = 1;
+
+// console.log(objC);
+// console.log(objB);
+// console.log(objA);
+// console.log(objA.x);
+// console.log(objA.y);
+// console.log(objA.z);
+
+var camper = "James";
+var camper = "David";
+console.log(camper);
