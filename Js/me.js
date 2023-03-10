@@ -142,6 +142,51 @@
 // console.log(objA.y);
 // console.log(objA.z);
 
-var camper = "James";
-var camper = "David";
-console.log(camper);
+// var camper = "James";
+// var camper = "David";
+// console.log(camper);
+
+const Car = function ({ brand, model, price } = {}) {
+    // const { brand, model, price } = config;
+// console.log(config);
+
+this.brand = brand;
+this.model = model;
+this.price = price;
+
+this.chengePrice = function (newPrice) {
+    this.price = newPrice;
+}
+};
+
+Car.prototype.sayHi = function () {
+    console.log("Car.prototype.sayHi -> this:", this);
+    console.log('Hellow :) ');
+}
+
+
+const myCar = new Car({
+    brand: 'Audi',
+    model: 'Q3',
+    price: 35000
+    });
+console.log(myCar);
+myCar.sayHi();
+myCar.chengePrice(10000);
+
+
+const myCar2 = new Car({
+    brand: 'BMW',
+    model: 'X6',
+    price: 85000
+    });
+console.log(myCar2);
+myCar2.sayHi();
+
+const myCar3 = new Car({
+    brand: 'Audi',
+    model: 'A6',
+    price: 65000
+});
+console.log(myCar3);
+myCar3.sayHi();
