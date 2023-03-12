@@ -146,47 +146,81 @@
 // var camper = "David";
 // console.log(camper);
 
-const Car = function ({ brand, model, price } = {}) {
-    // const { brand, model, price } = config;
-// console.log(config);
+// const Car = function ({ brand, model, price } = {}) {
+//     // const { brand, model, price } = config;
+// // console.log(config);
 
-this.brand = brand;
-this.model = model;
-this.price = price;
+// this.brand = brand;
+// this.model = model;
+// this.price = price;
 
-this.chengePrice = function (newPrice) {
-    this.price = newPrice;
-}
+// this.chengePrice = function (newPrice) {
+//     this.price = newPrice;
+// }
+// };
+
+// Car.prototype.sayHi = function () {
+//     console.log("Car.prototype.sayHi -> this:", this);
+//     console.log('Hellow :) ');
+// }
+
+
+// const myCar = new Car({
+//     brand: 'Audi',
+//     model: 'Q3',
+//     price: 35000
+//     });
+// console.log(myCar);
+// myCar.sayHi();
+// myCar.chengePrice(10000);
+
+
+// const myCar2 = new Car({
+//     brand: 'BMW',
+//     model: 'X6',
+//     price: 85000
+//     });
+// console.log(myCar2);
+// myCar2.sayHi();
+
+// const myCar3 = new Car({
+//     brand: 'Audi',
+//     model: 'A6',
+//     price: 65000
+// });
+// console.log(myCar3);
+// myCar3.sayHi();
+
+const CounterPlugin = function ({ 
+    rootSelector,
+    initialValue = 0,
+     step = 1 } = {}) {
+    this._rootSelector = rootSelector;
+    this._value = initialValue;
+    this._step = step;
+
+    this._getRefs(rootSelector) 
 };
 
-Car.prototype.sayHi = function () {
-    console.log("Car.prototype.sayHi -> this:", this);
-    console.log('Hellow :) ');
+CounterPlugin.prototype._getRefs = function (rootSelector) {
+console.log(rootSelector);
+const refs = {};
+refs.container = document.querySelector('rootSelector');
+console.log(refs.container);
 }
 
+CounterPlugin.prototype.increment = function () {
+    this._value += this._step;
+};
 
-const myCar = new Car({
-    brand: 'Audi',
-    model: 'Q3',
-    price: 35000
-    });
-console.log(myCar);
-myCar.sayHi();
-myCar.chengePrice(10000);
+CounterPlugin.prototype.decrement = function () {
+    this._value -= this._step;
+};
 
+const counter1 = new CounterPlugin({ rootSelector: '#counter-1', step: 10 }); 
 
-const myCar2 = new Car({
-    brand: 'BMW',
-    model: 'X6',
-    price: 85000
-    });
-console.log(myCar2);
-myCar2.sayHi();
+console.log('counter1', counter1);
 
-const myCar3 = new Car({
-    brand: 'Audi',
-    model: 'A6',
-    price: 65000
-});
-console.log(myCar3);
-myCar3.sayHi();
+const counter2 = new CounterPlugin({ rootSelector: '#counter-2', step: 2 });
+
+console.log('counter2', counter2);
