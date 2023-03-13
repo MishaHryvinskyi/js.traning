@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Rubik+Moonrocks&family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
     <title>Resume KatI</title>
 </head>
 <body>
     <!--Maine-->
     <div class="maine">
        <!--Maine content--> 
-       <div>
+       <div class="maine_title-uppertitle">
         <!--About user-->
-        <h2> <span class="about_1">Крута</span> <span class="about_2">Кулюрина</span> </h2>
+        <h2 class="name_upper-title"><span class="about_1">Tara</span><span class="about_2">skina</span></h2>
         <h1 class="name_title">Тарасевич-Гривінська Катерина Андріївна</h1>
     </div>
     <!--Projects-->
@@ -34,6 +35,7 @@
         </ol>
     </div>
     <!--Work-->
+    <section class="experiens-work">
     <div>
        <h3>Досвід роботи</h3>
         <!--Company_!-->
@@ -55,54 +57,36 @@
                 <li class="li_style">Продажі продукції компанії</li>
                 <li class="li_style">збір та обробка інформації. Статистика</li>
         </div>
+    </div>
+</section>
         <!--Company_3-->
-        <div>
-            <h4 class="name_work">Адміністратор Салон-магазин "Оптика"</h4>
-            <p class="date">Серпень 2015 Вересень 2016</p>
-            <ul class="work_exp">
-                <li class="li_style">Консультація покупців</li>
-                <li class="li_style">Прийняття замовлень згідно виписаного рецепту</li>
-                <li class="li_style">Товарооблік</li>
-        </div>
-        <!--Education_2-->
-        <div>
-
-            <div class="counter-1">
-                <button data-increment style="padding: 10px 50px;"><b>+</b></button>
-                <span data-value><b>0</b></span>
-                <button data-decrement style="padding: 10px 50px;"><b>-</b></button>
-            </div>
-
-            <div class="counter-2">
-                <button data-increment style="padding: 10px 50px;"><b>+</b></button>
-                <span data-value><b>0</b></span>
-                <button data-decrement style="padding: 10px 50px;"><b>-</b></button>
-            </div>
-
-            
-            
+            <div class="education">
             <h3>Вища освіта</h3>
-            <button class="js-button" type="button">vuvt</button>
             <h4>Львівський національний університет імені Івана-Франка</h4>
             <h4>Філософський факультет, Культурологія</h4>
             <p>Вересень 2016 липень 2020</p>
             <!--Education_1-->
-            <div>
                 <h3>Середня спеціальна освіта</h3>
                 <h4>Косівське училище прикладного та декоративного мистецтва (ЛНАМ)</h4>
                 <h4>Художнє ткацтво</h4>
                 <p>Вересень 2011 Липень 2015</p>
             </div>
-        </div>
+        
     </div>
        <!---Sidebar-->
-       <aside class="">
-        <img src="" alt="user photo">
+       <aside class="aside">
+        <div class="img_block">
+        <img class="img_user" src="./images/katia.jpg" alt="user photo">
+        <button class="btn-chenges" type="button"><b>K</b></button>
+        
+        </div>
         <!--Contacts-->
         <div>
             <h3>Контакти</h3>
             <div>
-               <p> <a href="C: +38 068 339 13 02">+38 068 339 13 02</a> C: </p>
+               <p><svg class="icon" width = 40 height = 50>
+                <use href="./icons.svg#icon-tel"></use>
+               </svg> <a href="C: +38 068 339 13 02">+38 068 339 13 02</a> C: </p>
                <p><a>E: mailto:</E:a></p>
                 
             </div>
@@ -127,7 +111,7 @@
        <!-- <script src="/Js/vuvt.js" type="module"></script> -->
        <!-- <script src="/Js/olimpiadz.js" type="module"></script> -->
        <script src="/Js/me.js"></script>
-       <!-- <script src="/Js/modal.js" type="module"></script> -->
+       <script src="/Js/modal.js" type="module"></script>
     </div>
 </body>
 </html>

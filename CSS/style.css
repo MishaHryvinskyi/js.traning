@@ -1,0 +1,114 @@
+/* ========== base style =========== */
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:#ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    
+}
+ol, ul, li, p {
+    margin: 0;
+    padding-left: 0;
+}
+body {
+    margin: 50px;
+    background-image: 
+    url(../images/back-fon-Katia.jpg
+    );
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color:#ffffff;
+    background-color: black;
+   
+}
+/* ========== block style =========== */
+.maine_title-uppertitle {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.name_upper-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    font-weight: 900;
+}
+.about_1 {
+    color:blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about_2 {
+    color:blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.name_title {
+    font-weight: 700;
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========== projects =========== */
+.projects {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ========== experiens-work =========== */
+.experiens-work {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ========== education =========== */
+.education {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aside {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_user {
+    height: 380px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.icon {
+    fill: blue;
+}
+.btn {
+    padding: 20px 50px;
+}
+
+
+.img_block {
+display: flex;
+flex-direction: column;
+
+}
+
+.btn-chenges {
+    margin-left: 130px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+.btn-chenges:hover
+ {
+    background-color: yellow;
+}
