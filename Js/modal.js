@@ -14,3 +14,11 @@
 //     console.log(imgEl.src);
 //     imgEl.src = "http://127.0.0.1:5500/images/katia.jpg";
 // }) ;
+
+const targetBtn = document.querySelector('.btn-chenges');
+
+targetBtn.addEventListener('click', handleTargetButtonClick);
+
+function handleTargetButtonClick() {
+    console.log("Клік по кнопці 'K'!");
+};
