@@ -113,3 +113,37 @@
 //     refs.output.textContent = '';
 // }
 
+const refs = {
+    openModalBtn: document.querySelector('[data-action="open-modal"]'),
+    closeModalBtn: document.querySelector('[data-action="close-modal"]'),
+    backdrop: document.querySelector('.js-backdrop'),
+};
+
+refs.openModalBtn.addEventListener('click', onOpenModal);
+refs.closeModalBtn.addEventListener('click', onCloseModal);
+refs.backdrop.addEventListener('click', onBackdropClick);
+
+function onOpenModal() {
+    window.addEventListener('keydown', onEscPress);
+    document.body.classList.add('show-modal');
+};// Відкривання модального вікна кліком по OpenModal
+
+function onCloseModal() {
+    window.removeEventListener('keydown', onEscPress);
+    document.body.classList.remove('show-modal');
+};// Закриття модального вікна кліком по CloseModal
+
+function onBackdropClick(event) {
+    if (event.currentTarget === event.target){
+        onCloseModal();
+    };
+   
+};// Закриття модального вікна кліком по backdrop
+
+function onEscPress(event) {
+    const ESC_KET_CODE = "Escape";
+        if (event.code === ESC_KET_CODE){
+        onCloseModal();
+    };
+}; // Закриття модального вікна клавішою ESC
+ 
