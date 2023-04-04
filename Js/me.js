@@ -36,3 +36,28 @@ navLinkEl.href = 'https://chat.openai.com/chat/61abd75c-2f77-4105-bf55-67ed11c1f
 // const navEl = document.querySelector('.work_exp');
 // console.log(navEl);
 // navEl.appendChild(naviItemEl);
+
+const timer = {
+    start() {
+        const startTime = Date.now();
+
+        setInterval(() => {
+            const currentTime = Date.now();
+            const deltaTime = currentTime - startTime;
+            const timeComponents = getTimeComponent(deltaTime);
+            console.log(timeComponents);
+        }, 1000);
+    },
+};
+
+timer.start();
+
+// function getTimeComponent(time) {
+//     const hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     const mins = Math.floor((time % (1000 * 60 * 60 )) / (1000 * 60));
+//     const secs = Math.floor((time % (1000 * 60 )) / 1000 );
+
+//     return { hours, mins, secs };
+// };
+
+

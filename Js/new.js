@@ -34,4 +34,4 @@ const isOpen = true;
 const isFriend = true;
 const isDnd = false;
 const canOpenChat = isOpen && isFriend &&! isDnd;
-console.log('Модна відкрити чат?', canOpenChat);
+console.log('Можна відкрити чат?', canOpenChat);
