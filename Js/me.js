@@ -37,20 +37,20 @@ navLinkEl.href = 'https://chat.openai.com/chat/61abd75c-2f77-4105-bf55-67ed11c1f
 // console.log(navEl);
 // navEl.appendChild(naviItemEl);
 
-const timer = {
-    start() {
-        const startTime = Date.now();
+// const timer = {
+//     start() {
+//         const startTime = Date.now();
 
-        setInterval(() => {
-            const currentTime = Date.now();
-            const deltaTime = currentTime - startTime;
-            const timeComponents = getTimeComponent(deltaTime);
-            console.log(timeComponents);
-        }, 1000);
-    },
-};
+//         setInterval(() => {
+//             const currentTime = Date.now();
+//             const deltaTime = currentTime - startTime;
+//             const timeComponents = getTimeComponent(deltaTime);
+//             console.log(timeComponents);
+//         }, 1000);
+//     },
+// };
 
-timer.start();
+// timer.start();
 
 // function getTimeComponent(time) {
 //     const hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
